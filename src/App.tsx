@@ -2,14 +2,25 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <p>Hello, Vite + TypeScript!</p>
+      <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/react-basics" element={<ReactBasics />} /> */}
+        {/* <Route path="/hooks" element={<Hooks />} /> */}
+        {/* <Route path="/routing" element={<Routing />} /> */}
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
