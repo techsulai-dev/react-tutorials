@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
+import UseStateUseEffect from './Components/usestate&useeffect'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,9 +17,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/react-basics" element={<ReactBasics />} /> */}
-        {/* <Route path="/hooks" element={<Hooks />} /> */}
-        {/* <Route path="/routing" element={<Routing />} /> */}
+        <Route path="/useState-useEffect" element={<UseStateUseEffect />} />
+        
+     
       </Routes>
       </BrowserRouter>
     </>
