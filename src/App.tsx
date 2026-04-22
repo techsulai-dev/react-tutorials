@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/useState-useEffect" element={<UseStateUseEffect />} />
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/useState-useEffect" element={<UseStateUseEffect />} />
+        </Routes>
       </BrowserRouter>
     </>
   )
