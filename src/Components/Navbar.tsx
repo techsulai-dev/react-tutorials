@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 const Navbar: React.FC = () => {
   return (
-    <nav style={{ display: "flex", gap: "20px", padding: "10px", background: "#eee" }}>
-      <Link to="/" className="nav-item">Home List of contents</Link>
+    <nav className="navbar">
+      <Link to="/home" className="nav-item">Home List of contents</Link>
       <Link to="/useState-useEffect">UseState & UseEffect</Link>
-      <Link to="/hooks">Hooks</Link>
+      <Link to="/UseContext">UseContext</Link>
       <Link to="/routing">Routing</Link>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar; 

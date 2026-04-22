@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function UseStateUseEffect() {
-    const [count, setCount] = React.useState(0);
+    const [count, setCount] = useState(0);
 
-     React.useEffect(() => {
+     useEffect(() => {
         console.log("Component mounted", "Current count:", count);
           
     }, [count]);
