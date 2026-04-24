@@ -7,6 +7,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import UseStateUseEffect from './Components/usestate&useeffect'
+import Login from './Pages/Login'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/useState-useEffect" element={<UseStateUseEffect />} />
+          <Route path = "/login" element = {<Login />} />
         </Routes>
       </BrowserRouter>
     </>

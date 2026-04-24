@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
       <Link to="/useState-useEffect">UseState & UseEffect</Link>
       <Link to="/UseContext">UseContext</Link>
       <Link to="/routing">Routing</Link>
+      <Link to="/login">Login</Link>
     </nav>
   );
 };
